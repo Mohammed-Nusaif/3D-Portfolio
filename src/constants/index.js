@@ -10,6 +10,7 @@ import {
     reactjs,
     redux,
     tailwind,
+    bootstrap,
     nodejs,
     mongodb,
     git,
@@ -23,6 +24,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    reofex
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +44,19 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Frontend Developer",
         icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
     },
     {
         title: "Backend Developer",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "UI/UX Developer",
+        icon: mobile,
+    },
+    {
+        title: "Testing & QA Engineer",
         icon: creator,
     },
 ];
@@ -89,6 +91,10 @@ const technologies = [
         icon: tailwind,
     },
     {
+        name: "bootstrap",
+        icon: bootstrap,
+    },
+    {
         name: "Node JS",
         icon: nodejs,
     },
@@ -108,24 +114,24 @@ const technologies = [
         name: "figma",
         icon: figma,
     },
-    {
-        name: "docker",
-        icon: docker,
-    },
+    // {
+    //     name: "docker",
+    //     icon: docker,
+    // },
 ];
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Junior Full Stack Developer",
+        company_name: "Reofex Technologies",
+        icon: reofex,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "May 2024 - sept 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Refactored the existing project codebase from JavaScript to TypeScript,enhancing code quality and maintainability.",
+            " Gained hands-on experience in VAST and VPAID ad-serving platforms,improving ad delivery and performance.",
+            " Added new features to the ad player to improve functionality and user experience.",
+            " Developed and tested responsive web interfaces using HTML, CSS,Bootstrap, and JavaScript, with Jest ensuring quality and early issue deployment, and version control (Git).detection",
         ],
     },
     {
