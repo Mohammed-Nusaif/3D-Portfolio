@@ -30,6 +30,9 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
+import weatherMonitor from "./weatherMonitor2.png"
+import ruleEngine from "./ruleEngine.png"
+import asterPharmacy from "./AsterPharmacy.png"
 import tripguide from "./tripguide.png";
 
 export {
@@ -62,5 +65,8 @@ export {
   tesla,
   carrent,
   jobit,
+  weatherMonitor,
+  ruleEngine,
+  asterPharmacy,
   tripguide,
 };
