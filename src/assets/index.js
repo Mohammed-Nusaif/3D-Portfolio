@@ -31,7 +31,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import weatherMonitor from "./weatherMonitor2.png"
-import ruleEngine from "./ruleEngine.png"
+import ruleEngine from "./RuleEngine.png"
 import asterPharmacy from "./AsterPharmacy.png"
 import tripguide from "./tripguide.png";
 
