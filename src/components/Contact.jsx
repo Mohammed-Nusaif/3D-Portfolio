@@ -28,9 +28,9 @@ const Contact = () => {
       'service_bvj8z8r',
       'template_ymaydr8',
       {
-        from_name: form.name,
+        name: form.name,
         to_name: 'Nusaif',
-        from_email:form.email,
+        email:form.email,
         to_email: 'nsf.ibn.sathar@gmail.com',
         message: form.message,
       },
