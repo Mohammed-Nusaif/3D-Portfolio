@@ -26,8 +26,12 @@ import {
     ruleEngine,
     asterPharmacy,
     tripguide,
+    apexChrono,
     threejs,
-    reofex
+    reofex,
+    angular,
+    sqlServer,
+    dotnet,
 } from "../assets";
 
 export const navLinks = [
@@ -65,14 +69,14 @@ const services = [
 ];
 
 const technologies = [
-    {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
+    // {
+    //     name: "HTML 5",
+    //     icon: html,
+    // },
+    // {
+    //     name: "CSS 3",
+    //     icon: css,
+    // },
     {
         name: "JavaScript",
         icon: javascript,
@@ -93,10 +97,10 @@ const technologies = [
         name: "Tailwind CSS",
         icon: tailwind,
     },
-    {
-        name: "bootstrap",
-        icon: bootstrap,
-    },
+    // {
+    //     name: "bootstrap",
+    //     icon: bootstrap,
+    // },
     {
         name: "Node JS",
         icon: nodejs,
@@ -109,13 +113,25 @@ const technologies = [
         name: "Three JS",
         icon: threejs,
     },
-    {
-        name: "git",
-        icon: git,
-    },
+    // {
+    //     name: "git",
+    //     icon: git,
+    // },
     {
         name: "figma",
         icon: figma,
+    },
+    {
+        name: "Angular",
+        icon: angular,
+    },
+    {
+        name: "SQL Server",
+        icon: sqlServer,
+    },
+    {
+        name: ".NET",
+        icon: dotnet,
     },
     // {
     //     name: "docker",
@@ -297,6 +313,27 @@ const projects = [
         ],
         image: asterPharmacy,
         source_code_link: "https://github.com/Mohammed-Nusaif/AsterPharmacy",
+    },
+    {
+        name: "ApexChrono",
+        description:
+            "A modern e-commerce web application for purchasing watches, featuring intuitive homepage banners, product search filters, cart management, and a clean responsive checkout design.",
+        tags: [
+            {
+                name: "Angular",
+                color: "pink-text-gradient",
+            },
+            {
+                name: ".NET Core",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "SQL Server",
+                color: "green-text-gradient",
+            },
+        ],
+        image: apexChrono,
+        source_code_link: "https://github.com/Mohammed-Nusaif/ApexChrono",
     },
 ];
 

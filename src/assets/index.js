@@ -20,7 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import bootstrap from "./tech/bootstrap.png"
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/Three.png";
+import angular from "./tech/Angular.png";
+import sqlServer from "./tech/Microsoft SQL Server.png";
+import dotnet from "./tech/dotnet.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -34,6 +37,7 @@ import weatherMonitor from "./weatherMonitor2.png"
 import ruleEngine from "./RuleEngine.png"
 import asterPharmacy from "./AsterPharmacy.png"
 import tripguide from "./tripguide.png";
+import apexChrono from "./apexChrono.png";
 
 export {
   logo,
@@ -58,6 +62,9 @@ export {
   tailwind,
   typescript,
   threejs,
+  angular,
+  sqlServer,
+  dotnet,
   meta,
   shopify,
   starbucks,
@@ -69,4 +76,5 @@ export {
   ruleEngine,
   asterPharmacy,
   tripguide,
+  apexChrono,
 };
