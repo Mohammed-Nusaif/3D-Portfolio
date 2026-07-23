@@ -40,9 +40,13 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1,1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[21px] max-w-3xl leading-[30px]'
       >
-        I&apos;m a skilled software developer with experience in javascript and typescript, and expertise in frameworks like React and Node.js. I have a strong foundation in computer science and software engineering principles. I&apos;m passionate about creating user-friendly web applications that are fast, elegant, and responsive. I&apos;m always eager to learn new technologies and improve my skills.Let&apos;s work together to build something amazing.
+        I build modern web applications that are intuitive, scalable, and designed for real users. With hands-on experience in Angular, React, .NET, JavaScript, TypeScript, and Node.js, I enjoy transforming ideas into reliable software with clean architecture and exceptional user experiences.
+        <br /><br />
+        Over the years, I&apos;ve worked on enterprise applications, developed reusable UI components, integrated REST APIs, optimized application performance, and implemented AI-powered capabilities including intelligent content summarization, translation, and text enhancement. I believe great software is not just functional—it should also be maintainable, performant, and enjoyable to use.
+        <br /><br />
+        Driven by curiosity and continuous learning, I&apos;m always exploring new technologies, development patterns, and AI-driven solutions to create applications that solve meaningful problems. Whether it&apos;s crafting seamless frontend experiences or building robust backend services, I strive to deliver software that&apos;s both elegant and impactful.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
