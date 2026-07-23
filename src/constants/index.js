@@ -20,24 +20,31 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
     weatherMonitor,
     ruleEngine,
     asterPharmacy,
-    tripguide,
     apexChrono,
     threejs,
     reofex,
     angular,
     sqlServer,
     dotnet,
+    adhun,
+    afeef,
+    rafeeq,
+    benzy,
+    aspire,
+    futuralabs,
 } from "../assets";
 
 export const navLinks = [
     {
         id: "about",
         title: "About",
+    },
+    {
+        id: "experience",
+        title: "Experience",
     },
     {
         id: "work",
@@ -141,55 +148,67 @@ const technologies = [
 
 const experiences = [
     {
+        title: "Angular Developer",
+        company_name: "Benzy Infotech Pvt Ltd",
+        icon: benzy,
+        iconBg: "#383E56",
+        date: "Jan 2026 - Present",
+        points: [
+            "Implemented AI-powered CRM features (Email Summarization, Rewrite, Translation) in Ticxly CRM using Angular 19, REST APIs, Signals, and RxJS.",
+            "Developed responsive user interfaces, including a WhatsApp Template Library, attachment previews, and agent activity timelines.",
+            "Built responsive Gmail-like AI interfaces with loading states, retry mechanisms, and language selections.",
+            "Collaborated with senior engineers to implement robust, reusable frontend architectures using TypeScript and Angular Material.",
+        ],
+    },
+    {
+        title: "Intern - Software Development",
+        company_name: "Aspire IT Academy, Kochi",
+        icon: aspire,
+        iconBg: "#E6DEDD",
+        date: "Aug 2025 - Present",
+        points: [
+            "Developed and maintained full-stack web applications using .NET Core, Angular, and MySQL, delivering scalable solutions.",
+            "Built responsive, reusable, and testable Angular components, ensuring a seamless user experience across devices and platforms.",
+            "Integrated frontend (Angular) with backend (.NET Core APIs), enabling smooth data flow and robust application architecture.",
+            "Designed and implemented RESTful APIs with .NET Core, optimized MySQL queries, and improved overall backend efficiency.",
+        ],
+    },
+    {
+        title: "Business Development Associate",
+        company_name: "Intellipaat, Bangalore, India",
+        icon: mobile,
+        iconBg: "#383E56",
+        date: "Nov 2024 - May 2025",
+        points: [
+            "Promoted and consulted on technical upskilling programs, helping clients choose career-oriented learning paths.",
+            "Collaborated with cross-functional sales and product teams to create effective client acquisition strategies and increase conversions.",
+            "Managed CRM systems to track pipelines and deliver accurate reports for strategic business decisions.",
+        ],
+    },
+    {
         title: "Junior Full Stack Developer",
-        company_name: "Reofex Technologies",
+        company_name: "Reofex Technologies, Malappuram, India",
         icon: reofex,
-        iconBg: "#383E56",
-        date: "May 2024 - sept 2024",
-        points: [
-            "Refactored the existing project codebase from JavaScript to TypeScript,enhancing code quality and maintainability.",
-            " Gained hands-on experience in VAST and VPAID ad-serving platforms,improving ad delivery and performance.",
-            " Added new features to the ad player to improve functionality and user experience.",
-            " Developed and tested responsive web interfaces using HTML, CSS,Bootstrap, and JavaScript, with Jest ensuring quality and early issue deployment, and version control (Git).detection",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "May 2024 - Nov 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Refactored the existing project codebase from JavaScript to TypeScript, enhancing code quality and maintainability.",
+            "Gained hands-on experience in VAST and VPAID ad-serving platforms, improving ad delivery and performance.",
+            "Added new features to the ad player to improve functionality and user experience.",
+            "Developed and tested responsive web interfaces using HTML, CSS, Bootstrap, and JavaScript, with Jest ensuring quality and early issue detection.",
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Intern - Software Development",
+        company_name: "Futura Labs LLP",
+        icon: futuralabs,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        date: "Dec 2023 - Apr 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed and maintained full-stack web applications using MongoDB, Express.js, React.js, and Node.js.",
+            "Designed and implemented RESTful APIs, optimized database queries and improved application efficiency.",
+            "Developed responsive and user-friendly interfaces, ensuring a seamless user experience across devices and screen sizes.",
+            "Collaborated with cross-functional teams to enhance teamwork and communication skills.",
         ],
     },
 ];
@@ -197,51 +216,51 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Nusaif proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "During his time at Reofex Technologies, Nusaif proved to be an exceptionally driven developer. His work on codebase modernization and optimizing ad players demonstrated strong problem-solving skills.",
+        name: "Rafeeq",
+        designation: "CEO",
+        company: "Reofex Technologies, Kizhissery",
+        image: rafeeq,
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Nusaif does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "Nusaif is a dedicated and highly capable engineer. He has a solid understanding of modern web tech like React, Angular, and .NET, coupled with a great attitude towards collaboration and code quality.",
+        name: "Adhun",
+        designation: "Senior Software Engineer",
+        company: "Benzy Infotech Pvt Ltd",
+        image: adhun,
     },
     {
         testimonial:
-            "After Nusaif optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "Working with Nusaif has been a great experience. He possesses the rare combination of technical expertise, layout precision, and responsiveness that is crucial for building user-centric software.",
+        name: "Afeef",
+        designation: "Founder and CEO",
+        company: "Guestify",
+        image: afeef,
     },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "ApexChrono",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "A modern e-commerce web application for purchasing watches, featuring intuitive homepage banners, product search filters, cart management, and a clean responsive checkout design.",
         tags: [
             {
-                name: "react",
+                name: "Angular",
+                color: "pink-text-gradient",
+            },
+            {
+                name: ".NET Core",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "SQL Server",
                 color: "green-text-gradient",
             },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: apexChrono,
+        source_code_link: "https://github.com/Mohammed-Nusaif/ApexChrono",
     },
     {
         name: "Weather Monitor",
@@ -313,27 +332,6 @@ const projects = [
         ],
         image: asterPharmacy,
         source_code_link: "https://github.com/Mohammed-Nusaif/AsterPharmacy",
-    },
-    {
-        name: "ApexChrono",
-        description:
-            "A modern e-commerce web application for purchasing watches, featuring intuitive homepage banners, product search filters, cart management, and a clean responsive checkout design.",
-        tags: [
-            {
-                name: "Angular",
-                color: "pink-text-gradient",
-            },
-            {
-                name: ".NET Core",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "SQL Server",
-                color: "green-text-gradient",
-            },
-        ],
-        image: apexChrono,
-        source_code_link: "https://github.com/Mohammed-Nusaif/ApexChrono",
     },
 ];
 

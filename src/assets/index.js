@@ -39,6 +39,14 @@ import asterPharmacy from "./AsterPharmacy.png"
 import tripguide from "./tripguide.png";
 import apexChrono from "./apexChrono.png";
 
+import adhun from "./testimonial/adhun.png";
+import afeef from "./testimonial/afeef.png";
+import rafeeq from "./testimonial/rafeeq.png";
+
+import benzy from "./companies/benzy.png";
+import aspire from "./companies/aspire.png";
+import futuralabs from "./companies/futuralabs.png";
+
 export {
   logo,
   backend,
@@ -77,4 +85,10 @@ export {
   asterPharmacy,
   tripguide,
   apexChrono,
+  adhun,
+  afeef,
+  rafeeq,
+  benzy,
+  aspire,
+  futuralabs,
 };
