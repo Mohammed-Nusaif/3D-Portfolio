@@ -1,4 +1,4 @@
-import { motion} from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import React from 'react'
 import emailjs from '@emailjs/browser'
 import { useRef, useState } from 'react'
@@ -16,6 +16,12 @@ const Contact = () => {
     message: ''
   });
   const [loading, setLoading] = useState(false);
+  const [popup, setPopup] = useState({
+    show: false,
+    status: 'success', // 'success' or 'error'
+    message: ''
+  });
+
   const handleChange = (e) => {
      const { name, value } = e.target;
 
@@ -37,22 +43,31 @@ const Contact = () => {
       'ff7QbvyBYVhP0HyrG'
     )
     .then(() => {
-      setLoading(false)
-      alert('Thank you.I will get back to you as soon as possible.')
+      setLoading(false);
+      setPopup({
+        show: true,
+        status: 'success',
+        message: 'Thank you. I will get back to you as soon as possible.'
+      });
       setForm({
-        name:'',
-        email:'',
-        message:'',
-      },(error) => {
-        setLoading(false)
-        console.log(error);
-        alert('Something went wrong.')
-      })
+        name: '',
+        email: '',
+        message: '',
+      });
     })
+    .catch((error) => {
+      setLoading(false);
+      console.log(error);
+      setPopup({
+        show: true,
+        status: 'error',
+        message: 'Something went wrong. Please try again later.'
+      });
+    });
   }
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden relative'>
       <motion.div
         variants={slideIn('left','tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -113,6 +128,49 @@ const Contact = () => {
       >
         <EarthCanvas/>
       </motion.div>
+
+      {/* Custom Popup Modal */}
+      <AnimatePresence>
+        {popup.show && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ type: 'spring', duration: 0.5 }}
+              className="bg-tertiary p-8 rounded-2xl border border-[#915eff]/30 shadow-card max-w-md w-full mx-4 text-center flex flex-col items-center gap-4"
+            >
+              {popup.status === 'success' ? (
+                <div className="w-16 h-16 rounded-full bg-green-500/10 flex items-center justify-center border border-green-500/30">
+                  <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+              ) : (
+                <div className="w-16 h-16 rounded-full bg-red-500/10 flex items-center justify-center border border-red-500/30">
+                  <svg className="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+              )}
+              
+              <h3 className="text-white font-bold text-[24px]">
+                {popup.status === 'success' ? 'Success!' : 'Oops!'}
+              </h3>
+              <p className="text-secondary text-[16px] leading-[24px]">
+                {popup.message}
+              </p>
+              
+              <button
+                onClick={() => setPopup({ ...popup, show: false })}
+                className="mt-2 bg-[#915eff] hover:bg-[#804df0] text-white py-2.5 px-8 rounded-xl font-bold shadow-md transition-all duration-300 transform hover:scale-105 cursor-pointer"
+              >
+                Okay
+              </button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
